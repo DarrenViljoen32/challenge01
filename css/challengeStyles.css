@@ -1,0 +1,276 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
+    padding: 0%;
+    text-decoration: none;
+    
+}
+/* h1, h2, h3, h4, p{
+    text-align: center;
+} */
+#hed01, #hed02{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: 5px;
+    text-decoration: none;
+    background-color: lightgray;
+    box-shadow: 0 0 50px black;
+    
+}
+.header{
+    background-color: lightgray;
+}
+
+img{
+    width: 350px;
+    height: 300px;
+}
+#aboutPara{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    padding-top: 5%;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+
+    grid-template-areas: 
+    "data01 data02"
+    "data03 data04"
+    ;
+}
+#sec1{
+    grid-area: data01;
+}
+#sec2{
+    grid-area: data02;
+}
+#sec3{
+    grid-area: data03;
+}
+#sec4{
+    grid-area: data04;
+}
+
+.holder{
+    padding-top: 5%;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "data05 data06"
+    "data07 data08"
+    "data09 data10"
+    ;
+}
+#prod01{
+    grid-area: data05;
+}
+#prod02{
+    grid-area: data06;
+}
+#prod03{
+    grid-area: data07;
+}
+#prod04{
+    grid-area: data08;
+}
+#prod05{
+    grid-area: data09;
+}
+#prod06{
+    grid-area: data10;
+}
+
+button{
+    width: 100px;
+    height: 20px;
+}
+
+ body{
+    background-image: url(/Screenshot\ 2023-10-16\ 135502.png);
+    padding-top: 5%;
+}
+
+#foot{
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    text-align: center;
+}
+table{
+    background-color: floralwhite;
+    
+}
+
+td{
+    width: 250px;
+    word-break: break-all;
+}
+
+textarea{
+    width: 75px;
+    height: 60px;
+    
+}
+
+@keyframes movement01{
+    0%{
+        /* background-color: floralwhite; */
+        left: 100%;
+        top: 0px;
+    }
+    /* 25%{
+        background-color: aquamarine;
+        left: 50%;
+        top: 0px;
+    } */
+    /* 50%{
+        background-color: darkcyan;
+        left: 50%;
+        top: 0px;
+    } */
+    /* 75%{
+        background-color: aquamarine;
+        left: 50%;
+        top: 0px;
+    } */
+    100%{
+        /* background-color: floralwhite; */
+        left: 0%;
+        top: 0px;
+    }
+}
+@keyframes movement02{
+    0%{
+        /* background-color: floralwhite; */
+        right: 100%;
+        top: 0px;
+    }
+    /* 25%{
+        background-color: aquamarine;
+        right: 50%;
+        top: 0px;
+    } */
+    /* 50%{
+        background-color: darkcyan;
+        right: 50%;
+        top: 0px;
+    } */
+    /* 75%{
+        background-color: aquamarine;
+        right: 50%;
+        top: 0px;
+    } */
+    100%{
+        /* background-color: floralwhite; */
+        right: 0%;
+        top: 0px;
+    }
+}
+@keyframes movement03{
+    0%{
+        /* background-color: floralwhite; */
+        left: 100%;
+        top: 0px;
+    }
+    /* 25%{
+        background-color: aquamarine;
+        left: 50%;
+        top: 0px;
+    } */
+    /* 50%{
+        background-color: darkcyan;
+        left: 50%;
+        top: 0px;
+    } */
+    /* 75%{
+        background-color: aquamarine;
+        left: 50%;
+        top: 0px;
+    } */
+    100%{
+        /* background-color: floralwhite; */
+        left: 0%;
+        top: 0px;
+    }
+}
+@keyframes movement04{
+    0%{
+        /* background-color: floralwhite; */
+        right: 100%;
+        top: 0px;
+    }
+    /* 25%{
+        background-color: aquamarine;
+        right: 50%;
+        top: 0px;
+    } */
+    /* 50%{
+        background-color: darkcyan;
+        right: 50%;
+        top: 0px;
+    } */
+    /* 75%{
+        background-color: aquamarine;
+        right: 50%;
+        top: 0px;
+    } */
+    100%{
+        /* background-color: floralwhite; */
+        right: 0%;
+        top: 0px;
+    }
+}
+
+
+.wel{
+    /* background-color: floralwhite; */
+    animation-name: movement01;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+.come{
+    /* background-color: floralwhite; */
+    animation-name: movement02;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+.lets{
+    /* background-color: floralwhite; */
+    animation-name: movement03;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+.go{
+    /* background-color: floralwhite; */
+    animation-name: movement04;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@media screen and (max-width:50%) {
+    
+    
+}
